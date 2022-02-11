@@ -1,0 +1,28 @@
+footer{
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    z-index:1;
+    width:100%;
+    background-color: #484c4d;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 7vh;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#rights{
+    color: white;
+}
+#home-pro{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#home-pro a{
+    padding: 4px;
+    font-size: 20px;
+}
