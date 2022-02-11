@@ -1,39 +1,35 @@
-<header>
- <div id="logo">
-<p>Social</p>
- </div>
-<ul>
-<% if (locals.user) { %>
-<div class="right-corner">
-    <li>
-        <a href="/users/profile">
-            <%=user.name%>
-        </a>
-    </li>
+<header id="layout-header">
+    <nav>
+        <div class="mini-logo">
+            <p>
+                <a href='/'>
+                    Social
+                </a>
+            </p>
+        </div>
     
-    <li>
-        <a href="/users/sign-out">Sign out</a>
-    </li>
-</div>
-
-<%} else{%>
-<div class="right-corner">
-    <li >
-        <a  href="/users/sign-in">Sign in</a>
-    </li>
-    
-    <li>
-        <a  href="/users/sign-up">Sign up</a>
-    </li>
-</div>
-
-
-<% } %>
-
-
-</ul>
-
-
+        <div class="auth-links">
+            <ul>
+                <% if (locals.user){ %>
+                <li>
+                    <a href="/users/profile"><%= user.name %></a>
+                </li>
+                <li>
+                    <a href="/users/sign-out">Sign Out</a>
+                </li>
+                <% }else{ %>
+                <li>
+                    <a href="/users/sign-in">Sign In</a>
+                </li>
+                <li>
+                    <a href="/users/sign-in">Sign Up</a>
+                </li>
+        
+                <% } %>
+            </ul>
+        </div>
+    </nav>
+ 
 
 
 </header>
