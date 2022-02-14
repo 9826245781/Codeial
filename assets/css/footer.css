@@ -3,10 +3,11 @@
   position: fixed;
   left: 0px;
   bottom: 0px;
-  z-index: 1;
   width: 100%;
   background: grey;
-  padding: 5px 10px;
+  display: flex;
+  justify-content: flex-start;
+  background: grey;
   display: flex;
   justify-content: flex-start; }
   #layout-footer a {

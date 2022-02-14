@@ -1,5 +1,7 @@
 body {
   margin: 0;
-  /* text-align: center; */ }
+  /* text-align: center; */
+  background-color: whitesmoke;
+  color: #2196f3; }
   body #layout-main {
     height: 100%; }
